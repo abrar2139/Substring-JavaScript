@@ -8,7 +8,7 @@ let originalLength=para.textContent;
 btn.addEventListener("click",function() {
     if (btn.textContent=="Read less") {
         btn.textContent="Read more"
-        para.textContent=para.textContent.substring(0,302);
+        para.textContent=para.textContent.substring(0,297);
         btn.style.color="green"
         btn.style.backgroundColor="lightgreen"
         btn.style.border="3px solid green"
