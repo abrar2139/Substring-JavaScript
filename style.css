@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    transition: background-color 2s ease-in-out;
+    transition: color 1s ease-in-out;
+}
+h1{
+    text-align: center;
+    flex-wrap: wrap;
+    border-bottom: 3px solid red;
+    /* box-shadow: 5px 4px 3px blue; */
+    box-shadow:0px 15px 15px -15px rgb(252, 96, 96);
+}
+p{
+    margin: 10px 0;
+    flex-wrap: wrap;
+    font-size: 3vw;
+}
+@media (max-width:600px) {
+    p{
+        font-size: 18px;
+    }
+    h1{
+        font-size: 22px;
+    }
+}
+.main{
+
+    position: relative;
+    height: 90vh;
+    width: 90%;
+}
+button{
+    cursor: pointer;
+    width: 140px;
+    height: 50px;
+    border: 3px solid red;
+    color: brown;
+    background-color: palevioletred;
+    font-size: 18px;
+    font-weight: 900;
+    position: absolute;
+    bottom: 0;
+    border-radius:20px ;
+    /* transition: all 2s ; */
+    animation: animate 7s alternate infinite linear;
+}
+button:hover{
+    transform: rotateY(0deg) ;
+    /* transition:all 0s linear; */
+}
+@keyframes animate {
+    100%{
+     transform: scale(1.1) rotateY(360deg);
+     
+    }
+}
+.main i{
+position: absolute;
+   right: 0;
+   bottom: 0;
+   font-size: 50px;
+   cursor: pointer;
+   color: yellow;
+   animation: increment 1s alternate infinite linear;
+   
+}
+@keyframes increment {
+    100%{
+     transform:scale(1.2);
+     
+    }
+}
+@keyframes rotation {
+    100%{
+     transform:rotate(360deg);
+     
+    }
+}
+
+
+
+
